@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* PARAMETROS CSS */
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    /* color: ; a definir */
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px; 
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+/* VARIABLES */
+
+$back__color: #E3E6F3;
+$box__shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+$font__color: #1a1a1a;
+$font-color2: #CFA0BA;
+
+/* ------------------------------------------------------------------------------------- */
+
+/* HEADER */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: $back__color;
+    box-shadow: $box__shadow;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: $font__color;
+            transition: 0.3s ease;
+
+            &:hover{
+                color: $font-color2;
+            }
+        }
+        .active{
+            color: $font-color2;
+            &::after{
+                content: "";
+                width: 30%;
+                background-color: $font-color2;
+                position: absolute;
+                bottom: -4px;
+                left: 20px;
+            }
+        }            
+    }
+}
+
+/* MAIN */
+
+#main{
+    background-image: url("/images/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    h4{
+        padding-bottom: 15px;
+    }
+
+    h1{
+        color: $font-color2;
+    }
+
+    button{
+        background-color: $font-color2;
+        color: $font__color;
+        outline: none;
+        border: none;
+        padding: 14px 80px 14px 65px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+/* PROMOTIONS */
+
+#promotions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .prom-box{
+        width: 180px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+        margin: 15px 0;
+
+        &:hover{
+            box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+        }
+
+        h6{
+            display: inline-block;
+            padding: 9px 8px 6px 8px;
+            line-height: 1;
+            border-radius: 4px;
+            color: white;
+            background-color: $font-color2;
+        }
+
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* PRODUCTOS */
+
+#products1{
+    text-align: center;
+
+        .pro-container{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+    
+            .pro{
+                width: 23%;
+                min-width: 250px;
+                padding: 10px 12px;
+                border: 1px solid #cce7d0;
+                border-radius: 25px;
+                cursor: pointer;
+                box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+                margin: 15px 0;
+                transition: 0.2s ease;
+                position: relative;
+        
+                &:hover{
+                    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+                }
+        
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+        
+                .desc{
+                    text-align: start;
+                    padding: 10px 0;
+        
+                    span{
+                        color: #606063;
+                        font-size: 12px;
+                    }
+        
+                    h5{
+                        padding-top: 7px;
+                        color: #1a1a1a;
+                    }
+        
+                    i{
+                        font-size: 12px;
+                        color: rgb(243, 171, 25);
+                    }
+        
+                    h4{
+                        padding-top: 7px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: rgb(185, 62, 165);
+                    }
+                }
+        
+                #cart{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 50px;
+                    background-color: #CFA0BA;
+                    color: #E3E6F3;
+                    border: 1px solid #222;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    #product-container{
+        display: flex;
+    }
+
+/* BANNER */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $font-color2;
+}
+
+/* CARRITO DE COMPRAS */
+
+#carrito_compras {
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        white-space: nowrap;
+
+        td{
+            
+
+            &:nth-child(1){
+                width: 100px;
+                text-align: center;
+            }
+            &:nth-child(2){
+                width: 150px;
+                text-align: center;
+            }
+            &:nth-child(3){
+                width: 250px;
+                text-align: center;
+            }
+            &:nth-child(4){
+                width: 150px;
+                text-align: center;
+            }
+            &:nth-child(5){
+                width: 150px;
+                text-align: center;
+            }
+            &:nth-child(6){
+                width: 150px;
+                text-align: center;
+            }
+        }
+    }
+
+    
+}

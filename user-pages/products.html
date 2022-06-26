@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/user-styles/user_styles.css ">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="/images/logo-index.jpg" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index-user.html">Home</a></li>
+                <li><a href="products.html" class="active">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="contador">0</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page__header">
+        <h2>Liquidacion de muchos de nuestro productos de otoño</h2>
+        <p>Ahora hasta un 70% con nuestro cupones</p>
+    </section>
+
+    <section id="products1" class="section-p1">
+        <h2>Todos nuestros productos</h2>
+        <p>Encontra lo que necesitas para tu local</p>
+        <div class="filters">
+            <div>
+                <label for="categoy">Filtra por marca</label>
+                <select name="category" id="marca">
+                    <option value="all">Todas las marcas</option>
+                    <option value="meline">Meline</option>
+                    <option value="teknikpro">Teknikpro</option>
+                    <option value="mundial">Mundial</option>
+                    <option value="prostyle">Prostyle</option>
+                    <option value="deuñas">DeUñas</option> 
+                    <option value="thuya">Thuya</option> 
+                </select>
+            </div>
+            <div>
+                <label for="categoy">Filtra por producto</label>
+                <select name="category" id="categoria">
+                    <option value="all">Todas las categorias</option>
+                    <option value="esmaltes">Esmaltes</option>
+                    <option value="cabinas">Cabinas</option>
+                    <option value="cintas">Cintas</option>
+                    <option value="tornos">Tornos</option>
+                    <option value="alicate">Alicate</option> 
+                    <option value="limas">Limas</option> 
+                </select>
+            </div>
+        </div>
+
+        <div id="product-container">
+
+        </div>
+        <!-- <div class="pro-container">
+            <div class="pro">
+                <img src="/images/prod-img/prod1.jpg" alt="">
+                    <div class="desc">
+                        <span>Meline</span>
+                        <h5>Esmalte Semipermanente Color 127 Aria
+                        </h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-plus" ></i></a>
+            </div>
+        </div>  -->  <!--  TERMINAR DE ACOMODAR -->
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <script src="/js/stock.js"></script>
+    <script src="/js/index-user.js"></script>
+    <script src="https://kit.fontawesome.com/79d1760261.js" crossorigin="anonymous"></script>
+</body>
+</html>

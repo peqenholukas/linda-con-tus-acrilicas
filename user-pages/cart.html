@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/user-styles/user_styles.css">
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="/images/logo-index.jpg" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index-user.html">Home</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="contador">0</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="carrito_compras" class="section-p1"> 
+        <table width = "100%">
+            <thead>
+                <tr>
+                    <td>Remover</td>
+                    <td>Imagen</td>
+                    <td>Producto</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody id="contCarrito">
+                <!-- <tr> -->
+                    <!-- <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
+                    <td><img src="/images/prod-img/prod1.jpg" alt=""></td>
+                    <td>Esmalte Semipermanente Color 127 Aria</td>
+                    <td>$117,19</td>
+                    <td><input type="number" value="0"></td>
+                    <td>117,19</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>  
+
+    <section id="carrito_añadido" class="section-p1">
+        <div id="coupon">
+            <h3>Aplicar coupon</h3>
+            <div>
+                <input type="text" placeholder="Ingresa tu codigo">
+                <button class="normal">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total de la compra</h3>
+            <table>
+                <tr>
+                    <td>Subtotal de la compra</td>
+                    <td>$ 355</td>
+                </tr>
+                <tr>
+                    <td>Envio</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$<span id = "precioTotal">0</span></strong></td>
+                </tr>
+            </table>
+            <button>Proceder al pago</button>
+        </div>
+    </section>
+
+    <script src="/js/stock.js"></script>
+    <script src="/js/pedido.js"></script>
+    <script src="https://kit.fontawesome.com/79d1760261.js" crossorigin="anonymous"></script>
+</body>
+</html>
